@@ -1,0 +1,106 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    place-items: center;
+}
+
+/* task 2 */
+body {
+    place-items: center;
+}
+  
+.gallery {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 20em;
+    gap: 0.25rem;
+
+    & img {
+        width: 100%;
+        object-fit: cover;
+
+        &:not(.hero) {
+        cursor: pointer;
+        }
+    }
+
+    & .hero {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+/* task 3 */
+.selected {
+    background-color: #cce5ff;
+}
+
+/* task 4 */
+.slider {
+    position: relative;
+    width: 300px;
+    height: 20px;
+    margin-top: 20px;
+  }
+  
+  .track {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #a5d7ff;
+    border-radius: 20px;
+  }
+  
+  .thumb {
+    position: absolute;
+    width: 10px;
+    height: 25px;
+    background-color: #3122ff;
+    cursor: pointer;
+    top: -2.5px;
+    border-radius: 50%;
+  }
+
+  /* task  6 */
+  .fade-in-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .resize {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    transition: width 0.5s, height 0.5s;
+  }
+
+  /* task 5 */
+  .container img {
+    width: 5em;
+  }
+
+  .cart img {
+    width: 5em;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    gap: 1em;
+  }
+  
+  .cart {
+    display: flex;
+    min-width: 10em;
+    min-height: 5em;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+    background-color: #c9edfe;
+    border: 2px dashed #0288d1;
+    text-align: center;
+  }

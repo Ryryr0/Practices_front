@@ -1,0 +1,57 @@
+/* task 1 */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 14em;
+    background-color: aquamarine;
+}
+
+.container .image {
+    position: relative;
+    width: 10em;
+}
+
+/* task 2 */
+.notification {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* task 3 */
+.parallax-container {
+    height: 100vh;
+    background-image: url('C:/Users/artem/Desktop/Универ/РКЧИР/Курсовая/images/icons/favicon_png.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-content {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* task 4 */
